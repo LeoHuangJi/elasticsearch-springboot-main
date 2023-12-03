@@ -3,8 +3,9 @@ elastic:
 es:
   hostname: localhost
   port: 9200
-  username: admin
-  password: password
+  protocol: http
+  username: elastic
+  password: 123456
   
   # SWAGGER
 springdoc.swagger-ui.path: /swagger-ui.html
@@ -12,3 +13,8 @@ springdoc.api-docs.path: /v1/api-docs
 
 http.cors.allow-methods : OPTIONS, HEAD, GET, POST, PUT, DELETE
 http.cors.allow-headers : Authorization, X-Requested-With,X-Auth-Token,Content-Type, Content-Length
+
+spring.datasource.url: jdbc:oracle:thin:@localhost:1521:orcl
+spring.datasource.username: shopli
+spring.datasource.password: shopli
+spring.datasource.driver-class-name: oracle.jdbc.OracleDriver
